@@ -7,7 +7,8 @@
 ---
 
 ## 🎯 Objetivo
-El objetivo del presente proyecto es implementar en **MySQL** distintos objetos de programación que fortalezcan la gestión de la base de datos `proyectos_informaticos`.  
+El propósito de este proyecto es implementar en **MySQL** distintos objetos de programación que fortalezcan la gestión de la base de datos `proyectos_informaticos`.  
+
 Se desarrollaron:  
 - **CRUD** (Create, Read, Update, Delete) mediante procedimientos almacenados para las tablas `docentes` y `proyectos`.  
 - Una **función definida por el usuario (UDF)** para calcular el promedio de horas de los proyectos.  
@@ -16,54 +17,49 @@ Se desarrollaron:
 ---
 
 ## 📂 Estructura del proyecto
+
+```bash
 proyectos_informaticos_mysql/
 ├─ README.md
 ├─ documentacion.txt
 ├─ sql/
-│  ├─ 00_create_database.sql
-│  ├─ 01_schema.sql
-│  ├─ 02_seed.sql
-│  └─ 03_queries.sql
+│  ├─ 00_create_database.sql   
+│  ├─ 01_schema.sql            
+│  ├─ 02_seed.sql              
+│  └─ 03_queries.sql           
 └─ docs/
-   └─ diagrama_logico.md
+   └─ diagrama_logico.md   ^    
 
+   ---
 
----
 
 ## 🚀 Ejecución en MySQL
-1. Abrir **MySQL** (Workbench, CLI o DBeaver).  
-2. Seleccionar la base de datos:  
+
+Para ejecutar el proyecto en **MySQL** (Workbench, DBeaver o CLI):
+
+1. Crear la base de datos:  
    ```sql
    SOURCE sql/00_create_database.sql;
 
-
----
-
-## Crear el esquema:
+2. Crear las tablas principales y de auditoría:
 
 SOURCE sql/01_schema.sql;
 
----
-
-
-## Ejecutar procedimientos, funciones y triggers:
+3.Cargar procedimientos, triggers y función:
 
 SOURCE sql/03_queries.sql;
 
-
----
-
-
-## Insertar y validar con datos de prueba:
+4.Insertar y validar con datos de prueba:
 
 SOURCE sql/02_seed.sql;
 
 
 ---
 
+
 ## 🧩 Solución implementada
 
-## Tablas de respaldo:
+Tablas de respaldo:
 
 copia_actualizados_docentes, copia_eliminados_docentes
 
@@ -80,7 +76,7 @@ Función definida por el usuario:
 promedio_horas_proyectos() → devuelve el promedio de horas registradas en los proyectos.
 
 
----
+
 
 ## Triggers:
 
@@ -89,7 +85,7 @@ trg_docentes_update, trg_docentes_delete
 trg_proyectos_update, trg_proyectos_delete
 
 
----
+
 
 ## 🧪 Pruebas realizadas
 
@@ -104,10 +100,8 @@ Consulta de las tablas de respaldo (copia_actualizados_*, copia_eliminados_*).
 Ejecución de la función promedio_horas_proyectos() para validar la operación matemática.
 
 
----
 
 ## 🌐 Repositorio en GitHub
 
 El código completo puede consultarse en el siguiente enlace:
-👉 
-
+👉 https://github.com/HannaSalinas/TallerPractico_Hanna_Contreras
