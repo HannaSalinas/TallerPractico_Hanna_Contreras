@@ -23,14 +23,13 @@ proyectos_informaticos_mysql/
 ├─ README.md
 ├─ documentacion.txt
 ├─ sql/
-│  ├─ 00_create_database.sql   
-│  ├─ 01_schema.sql            
-│  ├─ 02_seed.sql              
-│  └─ 03_queries.sql           
+│  ├─ 00_create_database.sql   # creación de la base de datos
+│  ├─ 01_schema.sql            # definición de tablas principales y de auditoría
+│  ├─ 02_seed.sql              # inserciones y pruebas
+│  └─ 03_queries.sql           # procedimientos, triggers y función
 └─ docs/
-   └─ diagrama_logico.md   ^    
+   └─ diagrama_logico.md       # descripción del modelo lógico
 
-   ---
 
 
 ## 🚀 Ejecución en MySQL
@@ -42,16 +41,16 @@ Para ejecutar el proyecto en **MySQL** (Workbench, DBeaver o CLI):
    SOURCE sql/00_create_database.sql;
 
 2. Crear las tablas principales y de auditoría:
-
-SOURCE sql/01_schema.sql;
+   ```sql
+   SOURCE sql/01_schema.sql;
 
 3.Cargar procedimientos, triggers y función:
-
-SOURCE sql/03_queries.sql;
+   ```sql
+   SOURCE sql/03_queries.sql;
 
 4.Insertar y validar con datos de prueba:
-
-SOURCE sql/02_seed.sql;
+   ```sql
+   SOURCE sql/02_seed.sql;
 
 
 ---
@@ -60,26 +59,26 @@ SOURCE sql/02_seed.sql;
 ## 🧩 Solución implementada
 
 Tablas de respaldo:
+```sql
+: copia_actualizados_docentes, copia_eliminados_docentes
 
-copia_actualizados_docentes, copia_eliminados_docentes
-
-copia_actualizados_proyectos, copia_eliminados_proyectos
+: copia_actualizados_proyectos, copia_eliminados_proyectos
 
 Procedimientos almacenados:
+```sql
+: insertar_docente, listar_docentes, actualizar_docente, eliminar_docente
 
-insertar_docente, listar_docentes, actualizar_docente, eliminar_docente
-
-insertar_proyecto, listar_proyectos, actualizar_proyecto, eliminar_proyecto
+: insertar_proyecto, listar_proyectos, actualizar_proyecto, eliminar_proyecto
 
 Función definida por el usuario:
-
-promedio_horas_proyectos() → devuelve el promedio de horas registradas en los proyectos.
+```sql
+: promedio_horas_proyectos() → devuelve el promedio de horas registradas en los proyectos.
 
 
 
 
 ## Triggers:
-
+```sql
 trg_docentes_update, trg_docentes_delete
 
 trg_proyectos_update, trg_proyectos_delete
@@ -88,7 +87,7 @@ trg_proyectos_update, trg_proyectos_delete
 
 
 ## 🧪 Pruebas realizadas
-
+```sql
 Inserción de docentes y proyectos con procedimientos.
 
 Listado completo de registros.
