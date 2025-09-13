@@ -1,0 +1,33 @@
+DOCUMENTACIÓN DEL PROYECTO
+
+Estudiante: Hanna Jineth Contreras Salinas
+Curso: Base de Datos
+Institución: IUDigital de Antioquia
+Docente: Julián Loaiza
+
+-----------------------------------------------------
+Descripción del trabajo:
+El presente taller tuvo como propósito implementar en MySQL distintos objetos de programación para la gestión de la base de datos `proyectos_informaticos`. 
+Para ello se desarrollaron las siguientes actividades:
+
+1. Creación de la base de datos y el esquema correspondiente.
+2. Construcción de procedimientos almacenados para realizar operaciones CRUD sobre las tablas `docentes` y `proyectos`.
+3. Implementación de una función definida por el usuario (UDF) denominada `promedio_horas_proyectos`, que devuelve el promedio de horas de todos los proyectos registrados.
+4. Programación de triggers para auditar registros actualizados y eliminados, almacenando la información en tablas de respaldo.
+5. Inserción de datos de prueba y ejecución de consultas para validar el correcto funcionamiento de los procedimientos, triggers y la función.
+
+-----------------------------------------------------
+Archivos entregados:
+- 00_create_database.sql : creación de la base de datos.
+- 01_schema.sql : definición de tablas principales y de auditoría.
+- 02_seed.sql : inserciones y pruebas de validación.
+- 03_queries.sql : procedimientos almacenados, función y triggers.
+- docs/diagrama_logico.md : descripción del modelo lógico de datos.
+- README.md : guía técnica del proyecto.
+- documentacion.txt : descripción detallada del proceso y enlace al repositorio.
+
+-----------------------------------------------------
+Repositorio en GitHub:
+https://github.com/HannaSalinas/TallerPractico_Hanna_Contreras.git
+
+
