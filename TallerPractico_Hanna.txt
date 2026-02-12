@@ -3,7 +3,6 @@ DOCUMENTACIÓN DEL PROYECTO
 Estudiante: Hanna Jineth Contreras Salinas
 Curso: Base de Datos
 Institución: IUDigital de Antioquia
-Docente: Julián Loaiza
 
 -----------------------------------------------------
 Descripción del trabajo:
