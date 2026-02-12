@@ -2,7 +2,6 @@
 
 **Estudiante:** Hanna Jineth Contreras Salinas  
 **Curso:** Bases de Datos – IUDigital de Antioquia  
-**Docente:** Julián Loaiza  
 
 ---
 
